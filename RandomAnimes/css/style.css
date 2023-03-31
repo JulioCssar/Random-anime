@@ -1,0 +1,77 @@
+ body {
+   background-color: #0d1117;
+
+   margin-top: 80px;
+ }
+
+ .container {
+   margin-left: 550px;
+   position: fixed;
+ }
+
+ button:active {
+   transform: scale(0.90);
+   transition: transform 0.1s ease-in-out;
+ }
+
+ button:hover {
+   color: white;
+ }
+
+ button {
+   animation: color-animation 1s infinite;
+   background-color: transparent;
+   margin-left: 60px;
+   border-radius: 10px;
+   font-family: 'Delicious Handrawn', cursive;
+   font-size: 30px;
+   box-shadow: 0 0 10px black;
+ }
+
+ p {
+   font-family: 'Unbounded', cursive;
+   font-weight: bold;
+ }
+
+ #footer {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: bold;
+   color: rgb(220, 233, 245);
+   padding: 70px;
+   position: fixed;
+   bottom: 0;
+   width: 10%;
+   color: white;
+   text-align: center;
+   padding: 10px 0;
+ }
+
+ #footer:hover {
+   color: black;
+   font-size: 22px;
+ }
+
+ @keyframes color-animation {
+   0% {
+     border-color: blue;
+   }
+
+   50% {
+     border-color: red;
+   }
+
+   100% {
+     border-color: green;
+   }
+ }
+
+ @media only screen and (max-width: 600px) {
+   .container {
+     margin: 0 auto;
+     width: 90%;
+   }
+
+   button {
+     margin-left: 0;
+   }
+ }
